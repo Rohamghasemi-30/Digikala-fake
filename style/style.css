@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: IranYekan-Bold;
+src: url(/fonts/Qs_Iranyekan\ bold.ttf);
+}
+
+@font-face{
+    font-family:IranYekan-light ;
+src: url(/fonts/Qs_Iranyekan\ light.ttf);
+}
+
+
+body{
+    display: flex;
+    direction: rtl;
+   
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav.firstNav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.right-box-nav{
+    align-items: center;
+    display: flex;
+    width: 80%;
+   
+}
+
+.left-box-nav{
+    width: 20%;
+  
+}
+
+nav.firstNav form.formSearch input{
+    display: flex;
+    width: 600px;
+    height: 44px;
+    direction: rtl;
+    background-color: #f0f0f1;
+    color: #81858b;
+    border: none;
+    padding: 0px 16px;
+    border-radius: 8px;
+    font-family: IranYekan-Bold;
+    margin-right: 50px;
+}
+
+.Basket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Basket .sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 134px;
+    height: 40px;
+    border: 1px solid rgb(173, 173, 173);
+}
+.Basket .sign a{
+    color: #000;
+    text-decoration: none;
+    font-family: IranYekan-Bold;
+}
+
+
+.secondNav{
+    padding: 20px;
+    display: flex;
+width: 100%;
+padding: 10px;
+border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.secondNav ul{
+    display: flex;
+    list-style: none;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.secondNav ul li a{
+    text-decoration: none;
+    color: #62666d;
+    font-family:IranYekan-light ;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.secondNav ul li:nth-child(1) a{
+    font-family: IranYekan-Bold;
+    padding: 2px;
+}
+
+.secondNav ul li a:hover{
+    border-bottom: 2px solid red;
+}
+
+.place{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    width: 25%;
+}
+
+.place li a{
+    text-decoration: none;
+    color: #62666d;
+    font-family:IranYekan-light ;
+    font-weight: 200;
+    font-size: 14px;
+    
+}
+
+
+.Profile{
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Profile .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Profile .user p a{
+    text-decoration: none;
+    font-family:IranYekan-light ;
+    color: #000;
+}
+
+.Profile .user p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+
+.Profile .user-image{
+    display: flex;
+    width: 84px;
+    height: 84px;
+    justify-content: center;
+    border-radius: 50px;
+    border: 2px solid rgb(184, 14, 184);
+    align-items: center;
+}
+
+.Profile .user-image img{
+    border-radius: 50px;
+    width: 74px;
+    height: 74px;
+}
+
+
+.slidebar{
+    width: 100%;
+}
+
+.slidebar img{
+    width: 100%;
+    height: 380px;
+}
+
+
+.content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.content-box{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.content-box img{
+    width: 52px;
+    height: 52px;
+}
+
+.content-box p a{
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+    font-family:IranYekan-light ;
+}
+
+
+.box{
+    list-style: none;
+    border-bottom: 1px red solid;
+}
+
+.products{
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: #ebebeb;
+    position: absolute;
+    top: 65px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-right: 50px;
+}
+
+
+.products::-webkit-scrollbar {
+    width: 10px;
+  }
+
+.products::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+    border-radius: 10px;
+  }
+
+.products::-webkit-scrollbar-thumb {
+    background: rgb(122, 122, 122); 
+    border-radius: 10px;
+  }
+
+.products::-webkit-scrollbar-thumb:hover {
+    background: red; 
+  }
+
+.formSearch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products{
+display: none;
+}
+
+.products h3{
+    font-family:IranYekan-light ;
+}
+
+.searchClick{
+    display: inline-block;
+}
+
+.sign button{
+background-color: transparent;
+border: none;
+}
+
+
+.signUp{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 30%;
+    display: none;
+    justify-content: center;
+}
+
+.basketForm{
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #81858b;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.basketForm input{
+    width: 350px;
+    height: 50px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+.basketForm input:focus{
+    border: 2px blue solid;
+    
+}
+
+::placeholder{
+    font-family:IranYekan-light ;
+    padding: 10px;
+}
+
+
+.formSignUp{
+    display: flex;
+}
